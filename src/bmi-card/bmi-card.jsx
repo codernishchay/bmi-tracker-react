@@ -1,9 +1,9 @@
 import React from "react";
 
-const BMICard =({ bmi })=>{
+const BMICard =({ bmi , setlist })=>{
     console.log(bmi)
     const handledelete = ()=>{
-         
+         setlist((pre)=> pre.filter((ele)=> ele.time != bmi.time ))
     }
     return (
         <div className="bmi-card">

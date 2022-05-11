@@ -22,7 +22,7 @@ function App() {
 
        <h1>Last 7 BMI records </h1>
        <div className='bmi-list'>
-        { list.length > 0 && list.map((ele)=> <BMICard bmi={ele}></BMICard>        ) } 
+        { list.length > 0 && list.map((ele)=> <BMICard setlist={setlist} bmi={ele}></BMICard>        ) } 
        </div>
     </div>
   )

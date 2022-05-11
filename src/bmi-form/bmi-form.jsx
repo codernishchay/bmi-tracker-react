@@ -5,14 +5,15 @@ const BmiForm = ({list, setlist})=>{
     const onSubmit = (data)=>{
     var today = new Date();
     var date = today.getFullYear()+'-'+(today.getMonth()+1)+'-'+today.getDate();
-    console.log(date)
+    const time = today.getHours() + ":" + today.getMinutes() + ":" + today.getSeconds() + ":" + today.getMilliseconds(); 
     let bmi = (data.weight / ((data.height * data.height) 
     / 10000)).toFixed(2);    
     var data = {
              bmi: bmi , 
              height: data.height,
              weight: data.weight, 
-             date: date 
+             date: date ,
+             time : time 
             }
             setlist((pre)=>{
                   if(pre.length < 7){
