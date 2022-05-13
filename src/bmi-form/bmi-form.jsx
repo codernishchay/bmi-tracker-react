@@ -3,6 +3,7 @@ import { useForm } from "react-hook-form"
 const BmiForm = ({list, setlist})=>{
     const {register, handleSubmit } = useForm(); 
     const onSubmit = (data)=>{
+    if(data.weight <= 0 || data.height <= 0 ) return ; 
     var today = new Date();
     var date = today.getFullYear()+'-'+(today.getMonth()+1)+'-'+today.getDate();
     const time = today.getHours() + ":" + today.getMinutes() + ":" + today.getSeconds() + ":" + today.getMilliseconds(); 

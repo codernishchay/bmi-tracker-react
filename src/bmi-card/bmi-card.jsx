@@ -6,7 +6,7 @@ const BMICard =({ bmi , setlist })=>{
          setlist((pre)=> pre.filter((ele)=> ele.time != bmi.time ))
     }
     return (
-        <div className="bmi-card">
+        <div className="bmi-card" data-tag="bmi-card">
             {bmi && <div className="row">
                 <div className="col"> 
                 <div className="bmi">  BMI  : {bmi.bmi}</div>
@@ -17,7 +17,7 @@ const BMICard =({ bmi , setlist })=>{
                   <div>Date : {bmi.date}</div>
                   </div>
             </div>
-}           <button onClick={handledelete}>X</button>
+}           <button data-tag="delete-card" onClick={handledelete}>X</button>
         </div>
     )
 }

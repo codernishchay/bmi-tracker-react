@@ -24,7 +24,7 @@ const LineChart = ({list})=>{
                 }
            ]
       }
-      return <Line data={data}></Line>
+      return <Line data-tag="graph" data={data}></Line>
 }
 
 export default  LineChart ; 

@@ -109,7 +109,8 @@ box-shadow: inset 5px 5px 1px #09214a,
 }
 
 .bmi-form > button {
-    padding: 15px;
+    padding-left: 10px;
+    padding-right: 10px;
     border-radius: 10x;
 }
 
@@ -148,6 +149,6 @@ box-shadow: inset 5px 5px 1px #09214a,
 }
 
 .bmi-card > button {
-    background-color: red;
-    
+    height: fit-content;
+    background-color: rgb(120, 4, 4);
 }
